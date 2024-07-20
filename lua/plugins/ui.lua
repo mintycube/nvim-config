@@ -54,7 +54,7 @@ return {
       require("noice").setup(opts)
     end,
   },
-    -- icons
+  -- icons
   {
     "nvim-tree/nvim-web-devicons",
   },
@@ -72,19 +72,19 @@ return {
           return {
             bg = colors.none,
             fg = colors.comment,
-            active_buf = colors.fg,
+            -- active_buf = colors.fg,
           }
         elseif colorscheme == "default" then
           return {
             bg = '#14161b',
             fg = '#9B9EA4',
-            active_buf = "#E0E2EA",
+            -- active_buf = "#E0E2EA",
           }
         else
           return {
             bg = "",
             fg = "",
-            active_buf = "",
+            -- active_buf = "",
           }
         end
       end
@@ -158,19 +158,32 @@ return {
         end,
       }
 
+      -- ins_left({
+      --   "buffers",
+      --   hide_filename_extension = false,
+      --   buffers_color = {
+      --     active = { fg = colors.active_buf, bg = colors.bg },
+      --     inactive = { fg = colors.fg, bg = colors.bg },
+      --   },
+      --   symbols = {
+      --     modified = " ●",
+      --     alternate_file = "",
+      --   },
+      --   cond = conditions.buffer_not_empty,
+      --   color = { fg = colors.active_buf, gui = "bold" },
+      -- })
+
       ins_left({
-        "buffers",
-        hide_filename_extension = false,
-        buffers_color = {
-          active = { fg = colors.active_buf, bg = colors.bg },
-          inactive = { fg = colors.fg, bg = colors.bg },
-        },
+        'filename',
+        file_status = true,      -- Displays file status (readonly status, modified status)
+        newfile_status = false,  -- Display new file status (new file means no write after created)
+        path = 0,                -- 0: Just the filename
         symbols = {
-          modified = " ●",
-          alternate_file = "",
-        },
-        cond = conditions.buffer_not_empty,
-        color = { fg = colors.active_buf, gui = "bold" },
+          modified = '[+]',      -- Text to show when the file is modified.
+          readonly = '[-]',      -- Text to show when the file is non-modifiable or readonly.
+          unnamed = '[No Name]', -- Text to show for unnamed buffers.
+          newfile = '[New]',     -- Text to show for newly created file before first write
+        }
       })
 
       ins_right({
