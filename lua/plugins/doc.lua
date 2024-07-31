@@ -1,38 +1,38 @@
 return {
   -- markdown
-  {
-    "OXY2DEV/markview.nvim",
-    enabled = false,
-    ft = { "markdown" },
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-      "nvim-tree/nvim-web-devicons"
-    },
-    -- opts = {
-    --   headings = {
-    --     enable = true,
-    --     shift_width = 4,
-    --     heading_1 = {
-    --       style = "label",
-    --     },
-    --     heading_2 = {
-    --       style = "label",
-    --     },
-    --     heading_3 = {
-    --       style = "label",
-    --     },
-    --     heading_4 = {
-    --       style = "label",
-    --     },
-    --     heading_5 = {
-    --       style = "label",
-    --     },
-    --     heading_6 = {
-    --       style = "label",
-    --     }
-    --   }
-    -- }
-  },
+  -- {
+  --   "OXY2DEV/markview.nvim",
+  --   enabled = false,
+  --   ft = { "markdown" },
+  --   dependencies = {
+  --     "nvim-treesitter/nvim-treesitter",
+  --     "nvim-tree/nvim-web-devicons"
+  --   },
+  --   -- opts = {
+  --   --   headings = {
+  --   --     enable = true,
+  --   --     shift_width = 4,
+  --   --     heading_1 = {
+  --   --       style = "label",
+  --   --     },
+  --   --     heading_2 = {
+  --   --       style = "label",
+  --   --     },
+  --   --     heading_3 = {
+  --   --       style = "label",
+  --   --     },
+  --   --     heading_4 = {
+  --   --       style = "label",
+  --   --     },
+  --   --     heading_5 = {
+  --   --       style = "label",
+  --   --     },
+  --   --     heading_6 = {
+  --   --       style = "label",
+  --   --     }
+  --   --   }
+  --   -- }
+  -- },
   {
     "ixru/nvim-markdown",
     ft = { "markdown" },

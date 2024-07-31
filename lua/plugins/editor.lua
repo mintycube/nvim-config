@@ -283,14 +283,14 @@ return {
   },
 
   -- autopairs
-  {
-    "windwp/nvim-autopairs",
-    enabled = false,
-    event = "InsertEnter",
-    opts = {
-      ignored_next_char = "[%w%.]",
-    },
-  },
+  -- {
+  --   "windwp/nvim-autopairs",
+  --   enabled = false,
+  --   event = "InsertEnter",
+  --   opts = {
+  --     ignored_next_char = "[%w%.]",
+  --   },
+  -- },
 
   {
     "echasnovski/mini.pairs",
